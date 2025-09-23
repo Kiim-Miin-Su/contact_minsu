@@ -11,7 +11,7 @@ profileImg.addEventListener('click', () => {
 const phoneInfo = document.querySelector('.phone-info');
 phoneInfo.addEventListener('click', () => {
     if (confirm('전화를 걸까요?')) {
-        window.open('tel:010-4144-0935');
+        window.open('tel:010-5294-0939');
     }
 });
 
