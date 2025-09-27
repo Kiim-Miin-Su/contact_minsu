@@ -8,20 +8,24 @@ profileImg.addEventListener('click', () => {
 });
 
 // Phone contact click functionality
+/*
 const phoneInfo = document.querySelector('.phone-info');
 phoneInfo.addEventListener('click', () => {
     if (confirm('전화를 걸까요?')) {
         window.open('tel:010-5294-0939');
     }
-});
+})
+*/
 
 // Address click functionality
+/*
 const addressInfo = document.querySelector('.address-info');
 addressInfo.addEventListener('click', () => {
     if (confirm('지도에서 주소를 확인하시겠습니까?')) {
         window.open('https://maps.google.com/?q=경기도+수원시+팔달구+고등로+15', '_blank');
     }
 });
+*/
 
 // Sparkle effect on hover for all interactive elements
 function createSparkle(element, event) {
