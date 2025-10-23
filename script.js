@@ -11,7 +11,8 @@ profileImg.addEventListener('click', () => {
 const phoneInfo = document.querySelector('.phone-info');
 phoneInfo.addEventListener('click', () => {
     if (confirm('전화를 걸까요?')) {
-        window.open('tel:010-5294-0939');
+        const phoneNumber = document.getElementById('phone-number').textContent;
+        window.open('tel:' + phoneNumber);
     }
 })
 
@@ -19,7 +20,8 @@ phoneInfo.addEventListener('click', () => {
 const addressInfo = document.querySelector('.address-info');
 addressInfo.addEventListener('click', () => {
     if (confirm('지도에서 주소를 확인하시겠습니까?')) {
-        window.open('https://maps.google.com/?q=경기도+양주시', '_blank');
+        const address = document.getElementById('address').split(' ').join('+');
+        window.open('https://maps.google.com/?q=' + address, '_blank');
     }
 });
 
