@@ -14,13 +14,13 @@ phoneInfo.addEventListener('click', () => {
         const phoneNumber = document.getElementById('phone-number').textContent;
         window.open('tel:' + phoneNumber);
     }
-})
+});
 
 // Address click functionality
 const addressInfo = document.querySelector('.address-info');
 addressInfo.addEventListener('click', () => {
     if (confirm('지도에서 주소를 확인하시겠습니까?')) {
-        const address = document.getElementById('address').split(' ').join('+');
+        const address = document.getElementById('address').split(' ').join('+'); // 주소 공백 -> + 변환
         window.open('https://maps.google.com/?q=' + address, '_blank');
     }
 });
